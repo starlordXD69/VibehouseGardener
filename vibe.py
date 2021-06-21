@@ -17,9 +17,8 @@ bot = commands.Bot(command_prefix=["V!", "v!"], intents=intents, case_insensitiv
                    activity=discord.Activity(name='v!help', type=discord.ActivityType.watching))
 vibes = vibes(bot)
 bot.remove_command('help')
-# starlordDev69
 client = pymongo.MongoClient(
-    "mongodb+srv://Starlord:Adeoluwa.05@cluster0.q1yxp.mongodb.net/myFirstDatabase&retryWrites=true&w=majority?ssl=true&ssl_cert_reqs=CERT_NONE",
+    "connection strings for mongo",
     connect=False)
 db = client.user
 experience = db.exp
@@ -41,7 +40,7 @@ db = client.leaderboard
 max_leaderboard = db.lb
 
 clientV2 = pymongo.MongoClient(
-    "mongodb+srv://Starlord:Adeoluwa.05@cluster0.8jinl.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+    "another connection string",
     connect=False)
 dbs = clientV2.Users
 coins = dbs.Coins
@@ -1592,4 +1591,4 @@ for filename in os.listdir('cogging'):
 
 leaderboard_reset.start()
 voice_exp_ppl.start()
-bot.run('ODQwMzkzMzczMTM4OTQ0MDMx.YJXjUQ.egsFxVCKs7cIazYzdHT-yTAhyMs')
+bot.run('noseetoken')
