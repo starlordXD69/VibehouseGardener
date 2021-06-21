@@ -7,9 +7,8 @@ import asyncio
 from discord.ext.commands import BucketType
 from vibeclass import vibes
 
-#starlorddev05
 client = pymongo.MongoClient(
-    "mongodb+srv://Starlord:Adeoluwa.05@cluster0.8jinl.mongodb.net/myFirstDatabase&retryWrites=true&w=majority?ssl=true&ssl_cert_reqs=CERT_NONE",
+    "connection string to mongo",
     connect=False)
 dbs = client.Users
 jobs= dbs.Jobs
@@ -17,7 +16,7 @@ dbev = client.Inv
 
 # starlordDev69
 client = pymongo.MongoClient(
-    "mongodb+srv://Starlord:Adeoluwa.05@cluster0.q1yxp.mongodb.net/myFirstDatabase&retryWrites=true&w=majority?ssl=true&ssl_cert_reqs=CERT_NONE",
+    "connection string to mongo",
     connect=False)
 db = client.leaderboard
 max_leaderboard = db.lb
